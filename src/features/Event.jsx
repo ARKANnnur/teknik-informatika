@@ -9,16 +9,16 @@ function Event() {
       </h1>
       <div className="grid h-full grow grid-cols-1 border-y-4 border-dark-50 bg-slate-800 sm:grid-cols-2 lg:grid-cols-4">
         <div className="h-72 w-full border border-dark-50 bg-light-400 sm:h-full">
-          1
+          <img src="/event4.jpg" alt="event4" className="h-full w-full" />
         </div>
         <div className="h-72 w-full border border-dark-50 bg-light-400 sm:h-full">
-          2
+          <img src="/event3.jpg" alt="event3" className="h-full w-full" />
         </div>
         <div className="h-72 w-full border border-dark-50 bg-light-400 sm:h-full">
-          3
+          <img src="/event2.jpg" alt="event2" className="h-full w-full" />
         </div>
         <div className="h-72 w-full border border-dark-50 bg-light-400 sm:h-full">
-          4
+          <img src="/event1.jpg" alt="event1" className="h-full w-full" />
         </div>
       </div>
       <h2 className="text-wrap text-center text-xl font-bold tracking-widest text-dark-100 md:text-6xl">

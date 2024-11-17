@@ -9,60 +9,70 @@ const awwards = [
     rank: "Juara 1",
     year: "2020",
     organizer: "Bappedalitbang Kabupaten Bogor",
+    img: "/awward5.jpg"
   },
   {
     nameCompetetion: "Gelaran Inovasi Daerah (GID)",
     rank: "Juara 2",
     year: "2020",
     organizer: "Bappedalitbang Kabupaten Bogor",
+    img: "/awward1.jpg"
   },
   {
     nameCompetetion: "Gelaran Inovasi Daerah (GID)",
     rank: "Juara 3",
     year: "2020",
     organizer: "Bappedalitbang Kabupaten Bogor",
+    img: "/awward3.jpg"
   },
   {
     nameCompetetion: "Pemilihan Mahasiswa Berprestasi Tk. LLDIKTI Wilayah IV",
     rank: "13 Besar",
     year: "2021",
     organizer: "LLDIKTI Wilayah IV Jawa Barat & Banten",
+    img: "/awward2.jpg"
   },
   {
     nameCompetetion: "Lomba Karya Tulis",
     rank: "Juara 1",
     year: "2021",
     organizer: "Agri-Informatika JIKA",
+    img: "/awward4.jpg"
   },
   {
     nameCompetetion: "Unjuk Gelar Porprov 2022",
     rank: "Medali Perunggu",
     year: "2022",
     organizer: "Porprov XIV 2022 KONI Jawa Barat",
+    img: "/awward5.jpg"
   },
   {
     nameCompetetion: "Lomba Berbaris Jarak Pendek 800 Meter Mix Porprov 2022",
     rank: "Medali Perunggu",
     year: "2022",
     organizer: "Porprov XIV 2022 KONI Jawa Barat",
+    img: "/awward4.jpg"
   },
   {
     nameCompetetion: "Lomba Berbaris Jarak Pendek 800 Meter Putra Porprov 2022",
     rank: "Medali Perak",
     year: "2022",
     organizer: "Porprov XIV 2022 KONI Jawa Barat",
+    img: "/awward3.jpg"
   },
   {
     nameCompetetion: "Gelaran Inovasi Daerah (GID)",
     rank: "Juara 1",
     year: "2022",
     organizer: "Bappedalitbang Kabupaten Bogor",
+    img: "/awward2.jpg"
   },
   {
     nameCompetetion: "IISMA 2022",
     rank: "Pertukaran Pelajar ke Negara Malaysia",
     year: "2022",
     organizer: "KEMDIKBUDRISTEKDIKTI ",
+    img: "/awward1.jpg"
   },
 ];
 

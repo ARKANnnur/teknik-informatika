@@ -2,7 +2,7 @@
 function FhotoCard({
   name,
   properti,
-  img = "/gedungFtsNight.jpeg",
+  img = "/gedung2.jpeg",
   border = true,
 }) {
   return (

@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <nav className="nav absolute top-0 z-10 flex w-full justify-start font-poppins sm:px-10 md:justify-center lg:px-20">
-      <div className="px-2 py-2 text-light-50 md:hidden">
+      <div className="text-light-50 px-2 py-2 md:hidden">
         {!isOpen ? (
           <RiMenu2Fill onClick={() => setIsOpen(true)} className="h-8 w-8" />
         ) : (
@@ -27,9 +27,9 @@ function Navbar() {
         )}
       </div>
       <ul
-        className={`w-full border-b-2 border-dark-200 font-semibold text-dark-200 md:flex md:justify-center md:py-2 ${isOpen ? "py-2" : "hidden"}`}
+        className={`mr-10 mt-2 w-full bg-dark-200 sm:rounded-none sm:bg-light-100  rounded-lg font-semibold text-white sm:m-0 md:flex md:justify-center md:border-b-2 md:border-dark-200 md:gap-5 lg:gap-0 md:py-2 md:text-dark-200 ${isOpen ? "py-2" : "hidden"}`}
       >
-        <div className="flex flex-col items-center gap-5 md:w-1/4 md:flex-row md:justify-end">
+        <div className="flex flex-col items-center gap-2 md:w-1/4 md:flex-row md:justify-end md:gap-5">
           <li>
             <Link
               to="#About"
@@ -55,12 +55,12 @@ function Navbar() {
             </Link>
           </li>
         </div>
-        <div className="hidden text-dark-50 md:block md:grow md:text-center md:text-xl">
+        <div className="hidden text-dark-50 lg:block md:grow md:text-center md:text-xl">
           <Link to="/">
             <h1>Teknik Informatika Uika</h1>
           </Link>
         </div>
-        <div className="flex flex-col items-center gap-5 md:w-1/4 md:flex-row">
+        <div className="flex flex-col items-center gap-2 md:w-1/4 md:flex-row md:gap-5">
           <li>
             <Link
               to="#Organization"

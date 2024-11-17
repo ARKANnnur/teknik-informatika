@@ -5,12 +5,23 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+const gallery = [
+  "/gedung1.jpeg",
+  "/gedung2.jpeg",
+  "gedung3.jpeg",
+  "/gedung1.jpeg",
+  "/gedung2.jpeg",
+  "gedung3.jpeg",
+  "/gedung1.jpeg",
+  "/gedung2.jpeg",
+  "gedung3.jpeg",
+];
+
 function Gallery() {
   const containerRef = useRef(null);
   const cardsRef = useRef(null);
 
   useGSAP(() => {
-
     const container = containerRef.current;
     const cards = cardsRef.current;
 
@@ -36,7 +47,7 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="Gallery bg-light-500 min-h-dvh py-10" id="Gallery">
+    <div className="Gallery min-h-dvh bg-light-500 py-10" id="Gallery">
       <div className="relative mt-10 h-[300dvh]" ref={containerRef}>
         <h1 className="sticky top-10 -translate-y-10 text-center text-6xl font-bold text-dark-100">
           GALLERY
@@ -47,10 +58,10 @@ function Gallery() {
             ref={cardsRef}
             className="flex min-w-max items-center gap-16 px-5"
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
+            {gallery.map((img, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="h-10 w-[2px] bg-dark-100"></div>
-                <FhotoCard />
+                <FhotoCard img={img} />
               </div>
             ))}
           </div>
