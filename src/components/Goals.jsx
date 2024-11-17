@@ -27,10 +27,6 @@ function Goals({ data }) {
         start: "top top",
         end: "10% bottom",
         invalidateOnRefresh: true,
-        markers: {
-          startColor: "yellow",
-          endColor: "yellow",
-        },
       },
     });
     gsap.to(".target1", {
@@ -43,10 +39,6 @@ function Goals({ data }) {
         start: "top top",
         end: "top bottom",
         invalidateOnRefresh: true,
-        markers: {
-          startColor: "yellow",
-          endColor: "yellow",
-        },
       },
     });
     gsap.to(".target2", {
@@ -59,16 +51,12 @@ function Goals({ data }) {
         start: "top top",
         end: "top bottom",
         invalidateOnRefresh: true,
-        markers: {
-          startColor: "yellow",
-          endColor: "yellow",
-        },
       },
     });
   }, []);
 
   return (
-    <div className="goal-container overflow-hidden relative min-h-[300dvh] bg-light-400 py-10">
+    <div className="goal-container relative min-h-[300dvh] overflow-hidden bg-light-400 py-10">
       <h2 className="text-shadow z-10 text-center text-6xl font-bold text-dark-200">
         TUJUAN
       </h2>
@@ -82,15 +70,15 @@ function Goals({ data }) {
       <h2 className="target-container text-shadow my-10 text-center text-6xl font-bold text-dark-200">
         SASARAN
       </h2>
-      <div className="flex w-full z-40 flex-col gap-10 px-5 md:flex-row md:px-10">
-        <div className="w-full z-40 space-y-10 md:w-1/2">
+      <div className="z-40 flex w-full flex-col gap-10 px-5 md:flex-row md:px-10">
+        <div className="z-40 w-full space-y-10 md:w-1/2">
           {firstTarget?.map((target, i) => (
             <Box key={i} size="w-full" bg="bg-light-100" name="target1">
               {target}
             </Box>
           ))}
         </div>
-        <div className="w-full z-40 space-y-10 md:w-1/2">
+        <div className="z-40 w-full space-y-10 md:w-1/2">
           {secondTarget?.map((target, i) => (
             <Box
               key={i}

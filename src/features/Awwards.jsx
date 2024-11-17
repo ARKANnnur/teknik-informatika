@@ -84,29 +84,24 @@ function Awwards() {
     const container = containerRef.current;
     const scrollContainer = scrollRef.current;
 
-    // Duplikasi items untuk efek infinite
     if (scrollContainer) {
       const duplicate = scrollContainer.cloneNode(true);
       container.appendChild(duplicate);
     }
 
-    // Setup GSAP animation
     const tl = gsap.timeline({
       repeat: -1,
       defaults: { ease: "none" },
     });
 
-    // Calculate total width
     const totalWidth = scrollContainer.offsetWidth;
 
-    // Animate
     tl.to(container, {
       x: -totalWidth,
       duration: 40,
       ease: "none",
     });
 
-    // Tambahkan event untuk pause animation on hover
     const handleMouseEnter = () => tl.pause();
     const handleMouseLeave = () => tl.play();
 

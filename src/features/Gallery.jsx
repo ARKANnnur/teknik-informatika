@@ -34,10 +34,6 @@ function Gallery() {
         end: "bottom bottom",
         scrub: 1,
         invalidateOnRefresh: true,
-        // markers: {
-        //   startColor: "yellow",
-        //   endColor: "yellow",
-        // },
       },
     });
 
