@@ -4,6 +4,7 @@ import { createContext, useState } from "react";
 import { useContext } from "react";
 import { useEffect } from "react";
 import { data as dataTranslate } from "../data/dataTranslate";
+import Loading from "../components/Loading";
 
 const GetRegionContext = createContext();
 
@@ -54,7 +55,7 @@ function GetRegionProvider({ children }) {
 
   return (
     <GetRegionContext.Provider value={{ language, data }}>
-      {isLoading ? <div>Loading</div> : children}
+      {isLoading ? <Loading /> : children}
     </GetRegionContext.Provider>
   );
 }
